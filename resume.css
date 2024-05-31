@@ -1,0 +1,339 @@
+:root{
+    --color1dark: #fff;
+    --color2dark: #787A91;
+    --color3dark: #141E61;
+    --color4dark: #0F044C;
+    --color1light: #FCE9F1;
+    --color2light: #F1D4E5;
+    --color3light: #73BBC9;
+    --color4light: #080202;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.container{
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+    top: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: scroll;
+    z-index: 3;
+    font-family: poppins;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+.resume{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1500px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    z-index: 5;
+    border: 2px solid var(--color4dark);
+    box-shadow: 0px 35px 55px rgba(255,255,255,0.5);
+    top: 250px;
+}
+
+.resume .left{
+    position: relative;
+    background-color: var(--color1dark);
+    padding: 40px;
+}
+
+.resume .right{
+    position: relative;
+    background-color: var(--color4dark);
+    padding: 40px;
+}
+
+/* left part */
+
+.profile-text{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    top: 100px;
+}
+
+.profile-text .cross{
+    position: absolute;
+    top: -30px;
+    left: -30px;
+}
+
+.imgbox{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid var(--color4dark);
+}
+
+img{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-text h2{
+    color: var(--color4dark);
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.5em;
+    letter-spacing: 3px;
+}
+
+.profile-text h2 span{
+    font-size: 0.8em;
+    font-weight: 300;
+    letter-spacing: 6px;
+}
+
+.contact{
+    position: relative;
+    top: 100px;
+}
+
+.contact .title{
+    color: var(--color4dark);
+}
+
+.text{
+    color: var(--color4dark);
+}
+
+.contact ul{
+    position: relative;
+}
+
+.contact ul li{
+    position: relative;
+    list-style: none;
+    margin-bottom: 10px;
+    width: 300px;
+}
+
+.contact ul li .icons{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    font-size: 18px;
+    color: #03bcf4;
+    background-color: var(--color4dark);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact ul li span{
+    font-weight: 100;
+}
+
+.education{
+    color: var(--color3dark);
+    position: relative;
+    top: 150px;
+}
+
+.education ul{
+    margin-left: -20px;
+    list-style: none;
+}
+
+.education ul li{
+    margin-bottom: 40px;
+}
+.education .year{
+    color: #03bcf4;
+}
+
+.education h4{
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: -10px;
+}
+
+.education h5{
+    font-weight: 300;
+}
+
+.language{
+    position: relative;
+    top: 150px;
+}
+
+.language .percent{
+    position: relative;
+    height: 6px;
+    background-color: var(--color2dark);
+    display: block;
+    width: 100%;
+    margin: 5px 5px -5px 5px;
+    border-radius: 5px;
+}
+
+.language .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: var(--color3dark);
+    border-radius: 25px;
+}
+
+/* right part */
+
+.right .title-2{
+    position: absolute;
+    color: #03bcf4;
+    font-size: 40px;
+    height: 30px;
+    z-index: 5;
+    top: 150px;
+    text-transform: uppercase;
+}
+
+p{
+    color: var(--color1dark);
+    position: absolute;
+    top: 230px;
+    padding-right: 50px;
+    text-align: justify;
+    margin-left: 20px;
+}
+
+.box{
+    position: relative;
+    top: 400px;
+}
+
+.box h5{
+    color: #03bcf4;
+    font-size: 1.5rem;
+}
+
+.box h4{
+    font-size: 1.5rem;
+    background-color: #03bcf4;
+    padding: 10px;
+}
+
+.box .text li {
+    color: var(--color1dark);
+}
+
+/* light mode */
+
+.resume.light{
+    border: 2px solid var(--color2light);
+    box-shadow: 0px 35px 55px rgba(255, 184, 184, 0.5);
+}
+
+
+
+/* light mode for left part */
+
+.resume .left.light{
+    background-color: var(--color1light);
+}
+
+.imgbox.light{
+    border: 5px solid var(--color3light);
+}
+
+.profile-text h2.light{
+    color: var(--color4light);
+}
+
+.contact .title.light{
+    color: var(--color4light);
+}
+
+.text.light{
+    color: var(--color4light);
+}
+
+
+
+
+.contact ul li .icons.light{
+    color: var(--color1light);
+    background-color: var(--color3light);
+}
+.education.light{
+    color: var(--color4light);
+}
+.education .year.light{
+    color: var(--color3light);
+}
+.language .percent.light{
+    background-color: var(--color2light);
+}
+.language .percent div.light{
+    background-color: var(--color3light);
+}
+
+
+/* light mode for right part */
+
+.resume .right.light{
+    background-color: #fff;
+}
+
+.title-2.light{
+    color: var(--color3light);
+}
+
+p.light{
+    color: var(--color4light);
+}
+
+.box h5.light{
+    color: var(--color3light);
+}
+
+.box h4.light{
+    background-color: var(--color3light);
+    color: #fff;
+}
+
+.box .text li.light{
+    color: var(--color4light);
+}
+
+.container.active{
+    transition: all 0.3s ease-in-out;
+    transform: scale(1);
+}
+
+@media (max-width: 1000px){
+    body{
+        overflow: auto;
+    }
+    .container{
+        height: auto;
+        top: -350px;
+    }
+    .resume{
+        margin: 10px;
+        grid-template-columns: 1fr;
+        max-width: 1000px;
+        grid-auto-rows: minmax(auto, 1500px);
+    }
+}

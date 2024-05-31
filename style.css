@@ -1,0 +1,311 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #07252d;
+    cursor: url(./cursor/dark-1.png), auto;
+}
+
+.index{
+    height: 101vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #07252d;
+    padding: 0px;
+    margin: -10px;
+    overflow: hidden;
+    z-index: -10;
+}
+
+.index h1{
+    position: absolute;
+    top: 60px;
+    font-size: 6rem;
+    letter-spacing: 15px;
+    color: #0e3742;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
+    line-height: 0.7em;
+    z-index: 2;
+}
+
+.index h1::after{
+    content: "";
+    position: absolute;
+    top:-5px;
+    left: 0;
+    height: 108%;
+    width: 100%;
+    border-left: 4px solid #03bcf4;
+    background-color: #07252d;
+    padding-top: 20px;
+    animation: typing 2s infinite,
+    cursors 0.4s step-end infinite alternate;
+    cursor: url(./cursor/dark-2.png), auto;
+}
+
+@keyframes cursors{
+    50%{
+        border-color: transparent;
+    }
+}
+
+@keyframes typing{
+    90%{
+        left: 103%;
+        width: 0%
+    }
+}
+
+h1:hover{
+    animation: animate 5s linear infinite;
+    border-color: transparent;
+}
+
+@keyframes animate{
+    20%,50.1%,60%,65.1%,80%,90%,92%,100%{
+        color:#0e3742;
+        text-shadow: none;
+    }
+    0%,18.1%,20.1%,50%,60.1%,65%,80%,90.1%,92.1%{
+        color: #fff;
+        text-shadow: 0 0 10px #03bcf4,
+                    0 0 20px #03bcf4,
+                    0 0 40px #03bcf4,
+                    0 0 80px #03bcf4,
+                    0 0 160px #03bcf4;
+    }
+}
+
+/* Remove the cursors animation on hover */
+h1:hover::after {
+    animation: none; /* Remove the cursors animation on hover */
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.outer{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 12px 12px 20px -2px #03bcf4, 
+    -12px -12px 20px -2px #03bcf4;
+}
+
+.inner{
+    height: 230px;
+    width: 230px;
+    border-radius: 50%;
+    box-shadow: inset 8px 8px 12px -2px #03bcf4,
+    inset -8px -8px 12px -2px #03bcf4,
+    0px 24px 20px -20px #03bcf4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+    font-family: poppins;
+}
+
+.svg-cont{
+    z-index: 1;
+    width: 650px;
+    height: 650px;
+}
+
+.circle-1{
+    fill: none;
+    stroke: #07252d;
+    stroke-width: 7px;
+    stroke-dasharray: 126;
+    stroke-dashoffset: 84;
+    transition: all 0.3s;
+}
+
+.circle-1:hover{
+    stroke: #fff;
+}
+
+.circle-2{
+    fill: none;
+    stroke: #07252d;
+    stroke-width: 7px;
+    stroke-dasharray: 126;
+    stroke-dashoffset: 84;
+    transition: all 0.3s;
+}
+
+.circle-2:hover{
+    stroke: #fff;
+}
+
+.circle-3{
+    fill:none;
+    stroke: #07252d;
+    stroke-width: 7px;
+    stroke-dasharray: 126;
+    stroke-dashoffset: 84;
+    transition: all 0.3s;
+}
+
+.circle-3:hover{
+    stroke: #fff;
+}
+
+circle{
+    cursor: url(./cursor/dark-2.png), auto;
+}
+/* social media */
+
+.menu{
+    font-size: 40px;
+    position: absolute;
+    opacity: 60%;
+}
+
+.social-media ul{
+    list-style: none;
+    font-size: 40px;
+}
+
+.social-media{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.5), rgba(255,255,255,0.2));
+    backdrop-filter: blur(3px);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 20px;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.social-media ul li img{
+    height: 40px;
+    width: 40px;
+    margin-left: -50px;
+}
+
+.social-media ul li:last-child{
+    margin-left: 50px;
+}
+
+.cross{
+    position: absolute;
+    background-color: #141E46;
+    color: #FFF5E0;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 15px;
+    top: 20px;
+    left: 20px;
+    cursor: url(./cursor/dark-2.png), auto;
+}
+
+.social-media.active{
+    transition: all 0.3s ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+a{
+    text-decoration: none;
+    color: #141E46;
+    padding: 10px;
+    margin: 10px;
+    cursor: url(./cursor/dark-2.png), auto;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/* light mode */
+
+body.light{
+    background-color: #fff;
+    cursor: url(./cursor/light-1.png), auto;
+}
+
+.index.light{
+    background-color: #FCE9F1;
+}
+
+.circle-1.light, .circle-2.light, .circle-3.light{
+    stroke: #73BBC9;
+    cursor: url(./cursor/light-2.png), auto;
+}
+
+.outer.light{
+    box-shadow: 22px 22px 30px -2px #F1D4E5, 
+    -22px -22px 30px -2px #F1D4E5;
+}
+
+.inner.light{
+    box-shadow: inset 8px 8px 12px -2px #F1D4E5,
+    inset -8px -8px 12px -2px #F1D4E5,
+    0px 24px 20px -20px #F1D4E5;
+    color: #000;
+    cursor: url(./cursor/light-2.png), auto;
+}
+
+.circle-1.light:hover, .circle-3.light:hover, .circle-2.light:hover{
+    stroke: #FCE9F1;
+}
+
+.index h1.light:hover{
+    animation: none;
+}
+
+.cross.light{
+    cursor: url(./cursor/light-2.png), auto;
+}
+
+.index h1.light::after{
+    background-color: #FCE9F1;
+    cursor: url(./cursor/light-2.png), auto;
+}
+
+.index h1:hover::after {
+    animation: none; /* Remove the cursors animation on hover */
+    background-color: transparent;
+    border-color: transparent;
+}
+@media (max-width: 768px){
+    .index h1{
+        font-size: 4rem;
+        letter-spacing: 10px;
+        -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
+        line-height: 0.7em;
+        z-index: 2;
+        animation: animate 5s linear infinite;
+        border-color: transparent;
+        text-align: center;
+    }
+    
+    .index h1::after{
+        animation: none;
+        background-color: transparent;
+        border: none;
+    }
+    .index h1.light{
+        animation: none;
+    }
+
+    .index h1.light::after{
+        background-color: transparent;
+        animation: none;
+    }
+}
