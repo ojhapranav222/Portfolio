@@ -1,5 +1,9 @@
+$(".circle-1").click(function(){
+    $(".coming").addClass("active");
+})
+
 $(".circle-2").click(function(){
-    $(".container").addClass("active").fadeIn();
+    $(".container").addClass("active");
 })
 
 $(".circle-3").click(function(){
@@ -9,6 +13,10 @@ $(".circle-3").click(function(){
 $(".cross").click(function(){
     $(".social-media").removeClass("active");
     $(".container").removeClass("active")
+})
+
+$(".getBack").click(function(){
+    $(".coming").removeClass("active");
 })
 
 const elementsToToggle = ["body",".circle-1",".circle-2",".circle-3",".outer",".inner","h1",".index",".cross",".resume", ".left", ".right", ".box h5", ".box h4", ".text li", ".title-2", "p", ".text", ".imgbox", ".contact .title", ".icons", ".education", ".year", ".percent", ".percent div"];
@@ -49,4 +57,3 @@ $(".circle-3").mouseout(function(){
         $(this).text("Hover over circle").fadeIn();
     });
 })
-

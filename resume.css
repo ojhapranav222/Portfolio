@@ -80,7 +80,7 @@ body{
     border: 5px solid var(--color4dark);
 }
 
-img{
+.resume .imgbox img{
     position: absolute;
     height: 200px;
     width: 200px;

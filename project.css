@@ -1,0 +1,53 @@
+.coming{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    z-index: 5;
+}
+
+.soon{
+    transform: translate(-50%, -50%);
+    height: 700px;
+    width: 800px;
+    border-radius: 25px;
+}
+
+.getBack{
+    position: absolute;
+    top: 200px;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    border: 3px solid #fff;
+    color: #fff;
+    padding: 10px 25px;
+    letter-spacing: 2px;
+    border-radius: 30px;
+    font-size: 1.5rem;
+    font-family: poppins;
+}
+
+.getBack:hover{
+    background-color: #000;
+    border: 0;
+    cursor: url(./cursor/dark-2.png), auto;
+    transition: all 0.5s ease;
+}
+
+.coming.active{
+    transition: all 0.3s ease-in-out;
+    transform: scale(1);
+}
+
+@media (max-width: 768px){
+    .soon{
+        height: 700px;
+        width: 600px;
+        margin-left: 50px;
+    }
+    .getBack{
+        top: 200px;
+    }
+}
