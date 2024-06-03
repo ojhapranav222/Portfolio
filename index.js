@@ -51,6 +51,7 @@ if (screen.width > 768){
 $(".menu").click(function(){
     $(".options").addClass("active");
 })
+
 $(".fa-x").click(function(){
     $(".options").removeClass("active");
 })

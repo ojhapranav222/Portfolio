@@ -164,7 +164,7 @@ circle{
 }
 /* social media */
 
-.menu{
+.social-media .menu{
     font-size: 40px;
     position: absolute;
     opacity: 60%;
@@ -284,9 +284,12 @@ body.light{
 }
 
 .menu{
-    opacity: 1;
     visibility: hidden;
-    animation: animate 5s linear infinite;
+    color: #0e3742;
+    opacity: 1;
+    animation: animate 3s linear;
+    font-size: 2rem;
+    z-index: 2;
 }
 
 .options{
@@ -363,10 +366,29 @@ body.light{
         letter-spacing: 10px;
         -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
         z-index: 2;
-        animation: animate 5s linear;
+        animation: perma 1s infinite;
         border-color: transparent;
         text-align: center;
         color: #0e3742;
+    }
+
+    @keyframes perma{
+        from {
+            color: #fff;
+            text-shadow: 0 0 10px #03bcf4,
+                        0 0 20px #03bcf4,
+                        0 0 40px #03bcf4,
+                        0 0 80px #03bcf4,
+                        0 0 160px #03bcf4;
+        }
+        to {
+            color: #fff;
+            text-shadow: 0 0 10px #03bcf4,
+                        0 0 20px #03bcf4,
+                        0 0 40px #03bcf4,
+                        0 0 80px #03bcf4,
+                        0 0 160px #03bcf4;
+        }
     }
 
     .index h1.light{
@@ -384,11 +406,11 @@ body.light{
         animation: none;
     }
 
-    .menu{
+    .index .menu{
         visibility: visible;
-        position: relative;
-        top: -10%;
-        right: -40%;
+        position: absolute;
+        top: 150px;
+        right: 5%;
     }
 
     .coming{
@@ -408,7 +430,6 @@ body.light{
         line-height: 90px;
     }
     .menu{
-        visibility: visible;
         position: relative;
         top: -10%;
         right: -40%;
