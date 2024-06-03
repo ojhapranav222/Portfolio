@@ -15,10 +15,13 @@
     border-radius: 25px;
 }
 
-.getBack{
+.container .getBack{
     position: absolute;
     top: 200px;
     transform: translate(-50%, -50%);
+}
+
+.getBack{
     background-color: transparent;
     border: 3px solid #fff;
     color: #fff;
@@ -41,13 +44,61 @@
     transform: scale(1);
 }
 
-@media (max-width: 768px){
-    .soon{
-        height: 700px;
-        width: 600px;
-        margin-left: 50px;
+.buttonSoon{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(255,255,255,0.3));
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+    z-index: 2;
+    height: 70vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    visibility: hidden;
+}
+
+.private{
+    font-size: 5rem;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+
+.buttonSoon .projectText{
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.projectText p{
+    line-height: 30px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.projectText h2{
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.buttonSoon.active{
+    visibility: visible;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn{
+    from{
+        scale: 0.5;
+        opacity: 0;
     }
-    .getBack{
-        top: 200px;
+    to{
+        scale: 1;
+        opacity: 1;
     }
 }
