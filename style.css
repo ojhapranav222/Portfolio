@@ -91,6 +91,8 @@ h1:hover::after {
     width: 300px;
     border-radius: 50%;
     position: absolute;
+    top: 50%;
+    transform: translateY(-47%);
     display: flex;
     align-items: center;
     justify-content: center;
