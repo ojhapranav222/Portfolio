@@ -411,7 +411,7 @@ body.light{
     .index .menu{
         visibility: visible;
         position: absolute;
-        top: 150px;
+        top: 100px;
         right: 5%;
     }
 

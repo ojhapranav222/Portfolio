@@ -5,7 +5,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
-    z-index: 5;
+    z-index: 2;
 }
 
 .soon{
@@ -15,7 +15,7 @@
     border-radius: 25px;
 }
 
-.container .getBack{
+.coming .getBack{
     position: absolute;
     top: 200px;
     transform: translate(-50%, -50%);
