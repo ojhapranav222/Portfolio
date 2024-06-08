@@ -324,20 +324,20 @@ body{
 
 @media (max-width: 1000px){
     body{
-        overflow: auto;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
     }
     .container{
         height: auto;
+        width: 90%;
         top: -350px;
-        overflow-y: scroll;
-        -webkit-overflow-scrolling: touch;
-        margin: 10px;
+        margin: 20px;
+        transform: translate(-50%, -50%);
     }
     .resume{
         grid-template-columns: 1fr;
         grid-template-rows: 1500px 1100px;
         max-width: 1000px;
-        margin: 10px;
     }
     .about{
         position: relative;
