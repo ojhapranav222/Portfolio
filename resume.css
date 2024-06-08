@@ -337,7 +337,9 @@ body{
         grid-template-columns: 1fr;
         grid-template-rows: 1500px 1100px;
         max-width: 1000px;
+        overflow-y: scroll;
         -webkit-overflow-scrolling: touch;
+        margin: 10px;
     }
     .about{
         position: relative;
