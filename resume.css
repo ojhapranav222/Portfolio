@@ -329,8 +329,6 @@ body{
     .container{
         height: auto;
         top: -350px;
-        overflow-y: scroll;
-        -webkit-overflow-scrolling: touch;
         margin: 20px;
         width: 90%;
         transform: translate(-50%, -50%) scale(0);
