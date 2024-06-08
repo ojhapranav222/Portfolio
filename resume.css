@@ -347,12 +347,8 @@ body{
 }
 
 @media (max-width: 870px){
-    .container{
-        margin: 20px;
-    }
     .resume{
         grid-template-rows: 1500px 1200px;
-        max-width: 80%;
     }
 }
 

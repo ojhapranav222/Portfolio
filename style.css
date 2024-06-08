@@ -306,6 +306,8 @@ body.light{
     width: 90%;
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(255,255,255,0.3));
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    will-change: transform;
     box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
     border-radius: 25px;
     margin: 10px;
@@ -411,7 +413,7 @@ body.light{
     .index .menu{
         visibility: visible;
         position: absolute;
-        top: 100px;
+        top: 70px;
         right: 5%;
     }
 
