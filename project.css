@@ -52,6 +52,8 @@
     width: 200px;
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(255,255,255,0.3));
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    will-change: transform;
     box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
     z-index: 5;
     height: 70vh;
