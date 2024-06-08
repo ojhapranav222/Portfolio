@@ -329,12 +329,15 @@ body{
     .container{
         height: auto;
         top: -350px;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
     }
     .resume{
         margin: 10px;
         grid-template-columns: 1fr;
         grid-template-rows: 1500px 1100px;
         max-width: 1000px;
+        -webkit-overflow-scrolling: touch;
     }
     .about{
         position: relative;
